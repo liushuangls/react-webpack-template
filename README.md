@@ -6,7 +6,7 @@ git clone git@github.com:liushuangbill/react-webpack-template.git your-app-name
 
 cd your-app-name
 
-git remote set-url origin your-git-url
+git remote set-url origin your-git-url // 修改远程仓库地址
 
 npm i
 
