@@ -9,6 +9,15 @@ function resolve(dir) {
 }
 
 module.exports = {
+  stats: {
+    all: false,
+    // 添加资源信息
+    assets: true,
+    errors: true,
+    timings: true,
+    version: true,
+    warnings: true,
+  },
   entry: {
     app: resolve("src/index.js")
   },
@@ -66,23 +75,20 @@ module.exports = {
       threshold: 10240,
       minRatio: 0.8
     }),
-    // 减小文件大小
-    new webpack.DefinePlugin({
-      // <-- 减少 React 大小的关键
-      "process.env": {
-        NODE_ENV: JSON.stringify("production")
-      }
-    }),
+    // 减少文件大小
     new webpack.optimize.AggressiveMergingPlugin() //合并块
   ],
   devServer: {
     port: 8080,
     contentBase: resolve("dist"),
+    // 一切服务都启用gzip 压缩
     compress: true,
     hot: true,
     inline: true,
+    // 服务器外部可访问
     host: "0.0.0.0",
     open: true,
-    progress: false
+    // 控制输出信息
+    stats: "minimal"
   }
 };
