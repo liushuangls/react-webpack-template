@@ -2,9 +2,11 @@
 
 ## use:
 ```npm
-git clone git@github.com:liushuangbill/React-template.git your-app-name
+git clone git@github.com:liushuangbill/react-webpack-template.git your-app-name
 
 cd your-app-name
+
+git remote set-url origin your-git-url
 
 npm i
 
