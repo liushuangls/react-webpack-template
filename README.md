@@ -2,9 +2,9 @@
 
 ## use:
 ```npm
-Download ZIP or git clone git@github.com:liushuangbill/React-template.git
+git clone git@github.com:liushuangbill/React-template.git your-app-name
 
-cd React-template
+cd your-app-name
 
 npm i
 
