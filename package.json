@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clear": "rimraf dist",
-    "start": "webpack-dev-server --mode=development --config config/webpack.config.js",
+    "start": "webpack-dev-server --mode=development --config config/webpack.config.js --color",
     "build": "npm run clear && webpack --mode=production --config config/webpack.config.js"
   },
   "author": "liushuang",
@@ -17,6 +17,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
