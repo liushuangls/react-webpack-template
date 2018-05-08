@@ -24,7 +24,7 @@ module.exports = {
     },
     // 将错误显示到页面上
     overlay: {
-      warnings: false,
+      warnings: true,
       errors: true
     }
   }
