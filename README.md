@@ -1,5 +1,6 @@
-# React + Webpack 项目模板
-[![Build Status](https://travis-ci.org/liushuangbill/react-webpack-template.svg?branch=master)](https://travis-ci.org/liushuangbill/react-webpack-template)
+# React + Webpack template [![Build Status](https://travis-ci.org/liushuangbill/react-webpack-template.svg?branch=master)](https://travis-ci.org/liushuangbill/react-webpack-template)
+
+Provide a template for developing React based applications using ES6 syntax and webpack.
 
 ## use:
 ```npm
