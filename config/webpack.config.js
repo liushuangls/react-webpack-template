@@ -3,7 +3,7 @@ const webpackMerge = require("webpack-merge")
 // 分离打包后的css文件
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
-const devConfig = require('./webpack-dev-server.config')
+const devConfig = require('./webpack-dev.config')
 const pluginConfig = require('./webpack-plugin.config')
 
 function resolve(dir) {
@@ -40,7 +40,7 @@ module.exports = webpackMerge(devConfig, pluginConfig, {
       {
         test: /\.(jsx|js)$/,
         loader: "babel-loader",
-        exclude: [resolve("node_modules")]
+        include: [resolve("src")]
       },
       {
         test: /\.css$/,

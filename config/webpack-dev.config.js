@@ -22,5 +22,10 @@ module.exports = {
       warnings: false,
       colors: true
     },
+    // 将错误显示到页面上
+    overlay: {
+      warnings: false,
+      errors: true
+    }
   }
 };
