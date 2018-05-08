@@ -24,9 +24,10 @@ npm run build // 打包项目
 |-- config                           // webpack配置目录
 |-- dist                             // 打包输出目录
 |-- src                              // 开发目录
+|   |-- index.js                     // 打包入口文件
 |-- .babelrc
-|-- .editorconfig                    // 编辑器配置
-|-- .postcssrc                       // postcss配置
+|-- .editorconfig
+|-- .postcssrc
 |-- README.md
 |-- package.json
 |-- index.html
