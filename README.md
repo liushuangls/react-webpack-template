@@ -1,4 +1,5 @@
 # React + Webpack 项目模板
+[![Build Status](https://travis-ci.org/liushuangbill/react-webpack-template.svg?branch=master)](https://travis-ci.org/liushuangbill/react-webpack-template)
 
 ## use:
 ```npm
