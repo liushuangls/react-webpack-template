@@ -48,7 +48,8 @@ module.exports = webpackMerge(devConfig, pluginConfig, {
         loader: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: ["css-loader", "postcss-loader"]
-        })
+        }),
+        include: [resolve("src")]
       },
       //配置file-loader，加载图片，字体资源
       {

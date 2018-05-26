@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode=development --config config/webpack.config.js --color",
     "build": "npm run clear && webpack --mode=production --config config/webpack.config.js"
   },
-  "author": "liushuang",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
